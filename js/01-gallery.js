@@ -24,7 +24,7 @@ createMarkup(galleryItems);
 
 function onImageClick (event) {
   event.preventDefault();
-  if (event.target.nodeNome !== "IMG") {
+  if (event.target.nodeName !== "IMG") {
     return
   }
   const { source } = event.target.dataset;
